@@ -1,0 +1,6 @@
+; $Id$
+name = Views importer
+description = Allows multiple views to be imported at once.
+core = 6.x
+package = Views
+dependencies[] = views
