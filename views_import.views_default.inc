@@ -1,5 +1,4 @@
 <?php
-// $Id$
 
 function views_import_views_default_views() {
   $dir = drupal_get_path('module', 'views_import') .'/import';
