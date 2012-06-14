@@ -1,5 +1,8 @@
 name = Views importer
 description = Allows multiple views to be imported at once.
-core = 6.x
+core = 7.x
 package = Views
+dependencies[] = ctools
 dependencies[] = views
+
+files[] = views_import.views_default.inc

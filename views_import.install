@@ -8,30 +8,30 @@
  * Implements hook_install().
  */
 function views_import_install() {
-	drupal_set_message(t("The Views Import Module has been installed."));
+  drupal_set_message(t("The Views Import Module has been installed."));
 }
 
 /**
  * Implements hook_install().
  */
 function views_import_uninstall() {
-	drupal_set_message(t("The Views Import Module has been uninstalled."));
+  drupal_set_message(t("The Views Import Module has been uninstalled."));
 }
 
 /**
  * Implements hook_requirements().
  */
 function views_import_requirements($phase) {
-	$directory = 'sites/all/imports/views';
-	$requirements = array();
+  $directory = 'sites/all/imports/views';
+  $requirements = array();
 
-	if (!is_dir($directory)) {
-		$requirements['views_import'] = array(
-			'title' => t('Views Import'),
-			'value' => t('The directory %directory does not exist!', array('%directory' => $directory)),
-			'severity' => REQUIREMENT_ERROR,
-		);
-	}
+  if (!is_dir($directory)) {
+    $requirements['views_import'] = array(
+      'title' => t('Views Import'),
+      'value' => t('The directory %directory does not exist!', array('%directory' => $directory)),
+      'severity' => REQUIREMENT_ERROR,
+    );
+  }
 
-	return $requirements;
+  return $requirements;
 }
