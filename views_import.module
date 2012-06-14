@@ -1,4 +1,8 @@
 <?php
+/**
+ * @file
+ * Views Import.
+ */
 
 /**
  * Implementation of hook_views_api.
