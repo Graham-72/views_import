@@ -31,6 +31,7 @@ function views_import_views_default_views() {
   $dir = 'sites/all/imports/views';
   $files = file_scan_directory($dir, '/\.inc$/', array('recurse' => FALSE));
 
+  $views = array();
   foreach ($files as $file) {
     $view = _views_import_fetch_view($file->uri);
     if ($view) {
