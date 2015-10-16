@@ -28,8 +28,7 @@ function _views_import_fetch_view($uri) {
  * @return array
  */
 function views_import_views_default_views() {
-  $dir = 'sites/all/imports/views';
-  $files = file_scan_directory($dir, '/\.inc$/', array('recurse' => FALSE));
+  $files = file_scan_directory(VIEWS_IMPORT_DIR, '/\.inc$/', array('recurse' => FALSE));
 
   $views = array();
   foreach ($files as $file) {
